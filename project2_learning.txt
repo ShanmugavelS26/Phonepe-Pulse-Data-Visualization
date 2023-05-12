@@ -1,0 +1,19 @@
+Github 
+Clone the GitHub repository by git Bash
+
+Streamlit commands
+
+Data Tranformation 
+cleaning and pre-processing steps 
+
+
+
+
+
+Issue faced in this project 
+
+
+
+
+
+
