@@ -15,7 +15,9 @@ To use this app, you need to have Python 3.x installed on your system, as well a
 
 Step 1 
 
-# GitHub cloning repository by Git Bash
+# GitHub cloning repository 
+
+GitHub cloning repository by Git Bash
 
 open the repository in GitHub which you need to clone it 
 click on code dropdown and select https 
@@ -29,7 +31,7 @@ then type git clone in that application
 it will start downloading the repository which you need as local repository
 after downloading you can work on it without changing in main original repository
 
-# GitHub cloning repository by Visual Studio 
+GitHub cloning repository by Visual Studio 
 
 open the repository in GitHub which you need to clone it 
 click on code dropdown and select https 
@@ -111,4 +113,4 @@ then click on deploy
 
 then this will deploy app in streamlit
 
-Demo video - https://drive.google.com/file/d/1yz5TTnpQ1QvWkrYmQwaCuKEWcx1i-HQQ/view?usp=sharing
+Demo video - https://drive.google.com/file/d/1yz5TTnpQ1QvWkrYmQwaCuKEWcx1i-HQQ/view?usp=share_link
