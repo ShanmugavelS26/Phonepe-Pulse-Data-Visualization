@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-#import mysql.connector as mysql 
+import mysql.connector as mysql 
 import plotly.express as px
 
 placeholder = st.empty()
