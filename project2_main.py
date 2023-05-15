@@ -1,4 +1,4 @@
-pip3 install plotly
+pip3 plotly
 import streamlit as st
 import pandas as pd
 #import mysql.connector as mysql 
