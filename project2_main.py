@@ -32,12 +32,12 @@ st.snow()
 
 # --------------------------------------- use this block and comment out previous to use data directly --------------------------------------
 # --------------------------------------- use this block and comment out previous to use data directly --------------------------------------
-df = pd.read_csv('D:\Guvi\projects\project 2 try VS1\pulse\csv\Agg_Trans.csv', index_col=0)
-state = pd.read_csv('D:\Guvi\projects\project 2 try VS1\pulse\csv\Longitude_Latitude_State_Table.csv')
-districts = pd.read_csv('D:\Guvi\projects\project 2 try VS1\pulse\csv\Data_Map_Districts_Longitude_Latitude.csv')
-districts_tran = pd.read_csv('D:\Guvi\projects\project 2 try VS1\pulse\csv\district_map_transaction.csv', index_col=0)
-app_opening = pd.read_csv('D:\Guvi\projects\project 2 try VS1\pulse\csv\district_registering_map.csv', index_col=0)
-user_device = pd.read_csv(r'D:\Guvi\projects\project 2 try VS1\pulse\csv\user_by_device.csv',index_col=0)
+df = pd.read_csv('csv\Agg_Trans.csv', index_col=0)
+state = pd.read_csv('csv\Longitude_Latitude_State_Table.csv')
+districts = pd.read_csv('csv\Data_Map_Districts_Longitude_Latitude.csv')
+districts_tran = pd.read_csv('csv\district_map_transaction.csv', index_col=0)
+app_opening = pd.read_csv('csv\district_registering_map.csv', index_col=0)
+user_device = pd.read_csv(r'csv\user_by_device.csv',index_col=0)
 
 
 
