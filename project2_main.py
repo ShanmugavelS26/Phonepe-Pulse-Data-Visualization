@@ -220,7 +220,7 @@ with payment_analysis:
     st.subheader(':white[Payment type Analysis -> 2018 - 2022:]')
     # querypa = 'select * from agg_transaction_table'
     # payment_mode = pd.read_sql(querypa, con=connection)
-    payment_mode = pd.read_csv('D:\Guvi\projects\project 2 try VS1\pulse\csv\Agg_Trans.csv', index_col=0)
+    payment_mode = pd.read_csv('https://raw.githubusercontent.com/ShanmugavelS26/Phonepe-Pulse-Data-Visualization/main/csv/Agg_Trans.csv', index_col=0)
     pie_pay_mode_state = st.selectbox('Please select State', ('andaman-&-nicobar-islands', 'andhra-pradesh', 'arunachal-pradesh',
                                                               'assam', 'bihar', 'chandigarh', 'chhattisgarh',
                                                               'dadra-&-nagar-haveli-&-daman-&-diu', 'delhi', 'goa', 'gujarat',
@@ -266,7 +266,7 @@ with transac_yearwise:
                                 ('Recharge & bill payments', 'Peer-to-peer payments', 'Merchant payments', 'Financial Services', 'Others'), key='transactype')
     transac_values = st.selectbox(
         'Please select the values to visualize', ('Transacion_count', 'Transacion_amount'), key='transacvalues')
-    payment_mode_yearwise = pd.read_csv('D:\Guvi\projects\project 2 try VS1\pulse\csv\Agg_Trans.csv', index_col=0)
+    payment_mode_yearwise = pd.read_csv('https://raw.githubusercontent.com/ShanmugavelS26/Phonepe-Pulse-Data-Visualization/main/csv/Agg_Trans.csv', index_col=0)
 
     # querypay_year = 'select * from agg_transaction_table'
     # payment_mode_yearwise = pd.read_sql(querypay_year, con=connection)
