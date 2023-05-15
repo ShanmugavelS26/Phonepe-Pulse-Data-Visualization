@@ -34,13 +34,19 @@ st.snow()
 
 # D:\Guvi\projects\Project 2 Phonepe pluse Data Visualization & exploration\pulse\csv\Agg_Trans.csv
 
+# https://raw.githubusercontent.com/ShanmugavelS26/Phonepe-Pulse-Data-Visualization/main/csv/Agg_Trans.csv
+# https://raw.githubusercontent.com/ShanmugavelS26/Phonepe-Pulse-Data-Visualization/main/csv/Data_Map_Districts_Longitude_Latitude.csv
+# https://raw.githubusercontent.com/ShanmugavelS26/Phonepe-Pulse-Data-Visualization/main/csv/Longitude_Latitude_State_Table.csv
+# https://raw.githubusercontent.com/ShanmugavelS26/Phonepe-Pulse-Data-Visualization/main/csv/district_map_transaction.csv
+# https://raw.githubusercontent.com/ShanmugavelS26/Phonepe-Pulse-Data-Visualization/main/csv/district_registering_map.csv
+# https://raw.githubusercontent.com/ShanmugavelS26/Phonepe-Pulse-Data-Visualization/main/csv/user_by_device.csv
 
-df = pd.read_csv('D:\Guvi\projects\Project 2 Phonepe pluse Data Visualization & exploration\pulse\csv\Agg_Trans.csv', index_col=0)
-state = pd.read_csv('D:\Guvi\projects\Project 2 Phonepe pluse Data Visualization & exploration\pulse\csvLongitude_Latitude_State_Table.csv')
-districts = pd.read_csv('D:\Guvi\projects\Project 2 Phonepe pluse Data Visualization & exploration\pulse\csvData_Map_Districts_Longitude_Latitude.csv')
-districts_tran = pd.read_csv('D:\Guvi\projects\Project 2 Phonepe pluse Data Visualization & exploration\pulse\csv\district_map_transaction.csv', index_col=0)
-app_opening = pd.read_csv('D:\Guvi\projects\Project 2 Phonepe pluse Data Visualization & exploration\pulse\csv\district_registering_map.csv', index_col=0)
-user_device = pd.read_csv(r'D:\Guvi\projects\Project 2 Phonepe pluse Data Visualization & exploration\pulse\csv\csv\user_by_device.csv',index_col=0)
+df = pd.read_csv('https://raw.githubusercontent.com/ShanmugavelS26/Phonepe-Pulse-Data-Visualization/main/csv/Agg_Trans.csv', index_col=0)
+state = pd.read_csv('https://raw.githubusercontent.com/ShanmugavelS26/Phonepe-Pulse-Data-Visualization/main/csv/Longitude_Latitude_State_Table.csv')
+districts = pd.read_csv('https://raw.githubusercontent.com/ShanmugavelS26/Phonepe-Pulse-Data-Visualization/main/csv/Data_Map_Districts_Longitude_Latitude.csv')
+districts_tran = pd.read_csv('https://raw.githubusercontent.com/ShanmugavelS26/Phonepe-Pulse-Data-Visualization/main/csv/district_map_transaction.csv', index_col=0)
+app_opening = pd.read_csv('https://raw.githubusercontent.com/ShanmugavelS26/Phonepe-Pulse-Data-Visualization/main/csv/district_registering_map.csv', index_col=0)
+user_device = pd.read_csv(r'https://raw.githubusercontent.com/ShanmugavelS26/Phonepe-Pulse-Data-Visualization/main/csv/user_by_device.csv',index_col=0)
 
 
 
