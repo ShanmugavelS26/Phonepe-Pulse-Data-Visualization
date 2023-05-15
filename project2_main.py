@@ -9,7 +9,7 @@ placeholder = st.empty()
 
 # -------------------------------------------------- Mysql server connection using mysql connect ---------------------------------------------
 
-connection = mysql.connect(host='localhost',database='phonepe_121try',user='root',password="12345",auth_plugin="mysql_native_password")
+#connection = mysql.connect(host='localhost',database='phonepe_121try',user='root',password="12345",auth_plugin="mysql_native_password")
 
 # ---------------------------------------------------- Fetching datas from Mysql using pandas -----------------------------------------------
 #query1 = 'select * from aggtrans_data'
