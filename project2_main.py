@@ -84,7 +84,7 @@ with st.container():
     with st.expander("Project Video"):
       video = st.checkbox('show video')
       if video:
-        img = open(r'https://drive.google.com/file/d/1yz5TTnpQ1QvWkrYmQwaCuKEWcx1i-HQQ/view?usp=share_link','rb')
+        img = open('https://drive.google.com/file/d/1yz5TTnpQ1QvWkrYmQwaCuKEWcx1i-HQQ/view?usp=share_link')
         st.video(img,format='video/mp4')
     st.write(' ')
     st.subheader(
