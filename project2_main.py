@@ -1,8 +1,8 @@
-
+!pip install plotly
 import streamlit as st
 import pandas as pd
 #import mysql.connector as mysql 
-#import plotly.express as px
+import plotly.express as px
 
 placeholder = st.empty()
 
