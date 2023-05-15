@@ -81,11 +81,6 @@ districts_final = pd.merge(districts_tran, districts,
 
 with st.container():
     st.title(':white[PhonePe Pulse Data Visualization(2018-2022)]')
-    with st.expander("Project Video"):
-      video = st.checkbox('show video')
-      if video:
-        img = open('https://drive.google.com/file/d/1yz5TTnpQ1QvWkrYmQwaCuKEWcx1i-HQQ/view?usp=share_link')
-        st.video(img,format='video/mp4')
     st.write(' ')
     st.subheader(
         ':white[Registered user & App installed -> State and Districtwise:]')
