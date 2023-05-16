@@ -105,3 +105,27 @@ by selection state , year and quater , transcation count or amount bar should up
 
 Transacion analysis of States
 by selection state , year and quater , transcation count or amount , transaction type  bar should update with data from mysql and shows the details in bar as year , transaction count or amount value and color mark
+
+Step 6 
+Deploy Steamlit app 
+Upload all py file and csv to github 
+run local py file as steamlit run project2_main1.py 
+streamlit will open at right corner click on 3 dots and click on app deploy 
+it will asked to login with git hub login 
+click on new app 
+give the details of your repo and branch and main py detail and click on deploy 
+App will deploy and run 
+
+changes to be done before deploy 
+in github repo 
+create new txt file as requirements.txt and enter below lines 
+plotly==5.13.0
+pandas==1.4.3
+mysql-connector-python==8.0.32
+
+in github repo 
+main.py file following changes to be done 
+it cant read the local file so click on csv folder and csv file 
+click on raw at right side top option then csv details open in new tab 
+copy the link from new tab and paate in read_csv path 
+do same for all csv file 
