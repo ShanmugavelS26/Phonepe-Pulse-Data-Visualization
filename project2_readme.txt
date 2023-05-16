@@ -1,5 +1,7 @@
 Phonepe Pulse Data Visualization and Exploration 
 
+Basic workflow and execution of project Phonepe Pulse Data Visualization (2018-2022)
+
 live geo visualization dashboard with information displayed about Phonepe pulse with interactive and appealing manner with 10 different dropdown which user can select facts to display and data will be stored in MySQL database for efficient retrieval of data and dashboard will be dynamically updated the latest data   
 
 Installation
@@ -29,5 +31,77 @@ after downloading you can work on it without changing in main original repositor
 Step 2 
 # Tranforming the data into suitable formate 
 
+Import all required lib like pandas,json,os,openpyxl 
 
+give the path of state to get agg_state list 
+open the path as listdir 
 
+convert the data into dataframe
+give the column name as empty list 
+by for loop extract the data and append to the list and create dataframe 
+
+convert the dataframe to csv with path name 
+
+follow the same process for all data extractions for state user , user device , map details 
+
+Step 3
+# Database insert in mysql 
+Import all required lib like pandas , mysql.connector , mysql.connector error 
+
+reading of csv files 
+read the csv file and print the head for your referance to verify it 
+
+connection to mysql
+connect to mysql with host, user, password, auth_plugin 
+
+creating new database 
+create the database by using cursor 
+
+Create table and insert data 
+connect to mysql by host, user, password, auth_plugin details 
+create cursor and select the database with was created before 
+if connected successfully then show to user in terminal as you are connected to database 
+check of table name is exist if not create table with following name and datatypes 
+after complete show user that table as been create 
+insert the data into table by insert database name.table name and insert all value 
+if all successfully insert the show user that record inserted if not show error as Error while connecting to mysql 
+
+follow the same process for all data insert table for state user , user device , map details , distict latitude, longitude , state table 
+
+Step 4 & 5 
+# Streamlit dashbord creation and mysql data extraction 
+
+Import all required lib like pandas , mysql.connector , streamlit , plotly.express 
+
+connection to mysql
+connect to mysql with host, user, password, auth_plugin 
+
+Fetch the datas from mysql database 
+use query and select table 
+create df and read datas by pandas.read_sql
+
+do same process for all the table 
+
+Data rreparation for geo-india map 
+sort the state values and reset the index 
+create new df and groupby state and sum all transaction count , amount 
+
+create choropleth data for state visualization 
+
+list out all the state name and merge the state , district  by outer join 
+
+first to show registered user and app installed details by selection year and state then scatter plot update the data from mysql and shows it 
+
+Create 4 tabs for Geographical analysis, User device analysis, Payment Types analysis, Transacion analysis of States.
+
+Geographical analysis
+by selection year and quater the India map should update the data from mysql and shows the details about District name , Transaction count , Latitude & Longitude , State name , Transaction amount by color mark , Year and Quater 
+
+User device analysis
+by selection state , year and quater user tree map , bar should update with data from mysql and shows the details of state name , Label (user device) , Brand precentage , parent , id , year , quater , and brand count 
+
+Payment Types analysis 
+by selection state , year and quater , transcation count or amount bar should update with data from mysql and shows the details in bar and pie chart as transcation type , transaction count or amount , year 
+
+Transacion analysis of States
+by selection state , year and quater , transcation count or amount , transaction type  bar should update with data from mysql and shows the details in bar as year , transaction count or amount value and color mark
